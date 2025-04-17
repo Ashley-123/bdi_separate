@@ -1,0 +1,10 @@
+2025-04-17 14:39:30.257 | INFO     | __main__:<module>:23 - 已从配置文件加载设置: /root/hkust_gz_bdi/backend/config/server_config.json
+2025-04-17 14:39:30.258 | INFO     | __main__:<module>:49 - 启动HKUST(GZ) BDI Web服务...
+2025-04-17 14:39:30.258 | INFO     | __main__:<module>:50 - 静态文件目录: /root/hkust_gz_bdi/backend/static
+2025-04-17 14:39:30.258 | INFO     | __main__:<module>:51 - 访问地址: http://10.100.0.231:8001
+2025-04-17 14:39:38.398 | INFO     | app.web.api:websocket_endpoint:182 - WebSocket连接已建立: m9kzq2m0jvesuh8w6xa
+2025-04-17 14:39:38.398 | INFO     | app.web.api:get_agent:72 - 为客户端创建新代理实例: m9kzq2m0jvesuh8w6xa
+2025-04-17 14:39:38.425 | INFO     | app.web.api:create_agent:86 - 创建新的Manus代理实例成功
+2025-04-17 14:40:21.359 | INFO     | app.web.api:websocket_endpoint:205 - WebSocket连接已断开: m9kzq2m0jvesuh8w6xa
+2025-04-17 14:40:21.359 | INFO     | app.web.api:websocket_endpoint:263 - WebSocket连接关闭: m9kzq2m0jvesuh8w6xa
+2025-04-17 14:40:21.359 | INFO     | app.web.api:disconnect:60 - 连接已移除: m9kzq2m0jvesuh8w6xa, 剩余活跃连接数: 0

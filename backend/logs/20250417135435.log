@@ -1,0 +1,4 @@
+2025-04-17 13:54:35.763 | ERROR    | __main__:<module>:25 - 加载配置文件失败: [Errno 2] No such file or directory: '/root/hkust_gz_bdi/backend/config/server_config.json'，使用默认配置
+2025-04-17 13:54:35.764 | INFO     | __main__:<module>:49 - 启动HKUST(GZ) BDI Web服务...
+2025-04-17 13:54:35.764 | INFO     | __main__:<module>:50 - 静态文件目录: /root/hkust_gz_bdi/backend/static
+2025-04-17 13:54:35.764 | INFO     | __main__:<module>:51 - 访问地址: http://0.0.0.0:8001

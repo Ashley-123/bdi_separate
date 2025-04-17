@@ -1,0 +1,365 @@
+2025-04-17 14:52:48.169 | INFO     | __main__:<module>:23 - 已从配置文件加载设置: /root/hkust_gz_bdi/backend/config/server_config.json
+2025-04-17 14:52:48.170 | INFO     | __main__:<module>:49 - 启动HKUST(GZ) BDI Web服务...
+2025-04-17 14:52:48.170 | INFO     | __main__:<module>:50 - 静态文件目录: /root/hkust_gz_bdi/backend/static
+2025-04-17 14:52:48.170 | INFO     | __main__:<module>:51 - 访问地址: http://10.100.0.231:8001
+2025-04-17 14:52:48.332 | INFO     | app.web.api:websocket_endpoint:182 - WebSocket连接已建立: m9l04wrm9xq3sf77pxu
+2025-04-17 14:52:48.332 | INFO     | app.web.api:get_agent:72 - 为客户端创建新代理实例: m9l04wrm9xq3sf77pxu
+2025-04-17 14:52:48.356 | INFO     | app.web.api:create_agent:86 - 创建新的Manus代理实例成功
+2025-04-17 14:52:53.051 | INFO     | app.web.api:websocket_endpoint:205 - WebSocket连接已断开: m9l04wrm9xq3sf77pxu
+2025-04-17 14:52:53.051 | INFO     | app.web.api:websocket_endpoint:263 - WebSocket连接关闭: m9l04wrm9xq3sf77pxu
+2025-04-17 14:52:53.051 | INFO     | app.web.api:disconnect:60 - 连接已移除: m9l04wrm9xq3sf77pxu, 剩余活跃连接数: 0
+2025-04-17 14:52:53.464 | INFO     | app.web.api:websocket_endpoint:182 - WebSocket连接已建立: m9l0743ku2lkn42wqjh
+2025-04-17 14:52:53.465 | INFO     | app.web.api:get_agent:72 - 为客户端创建新代理实例: m9l0743ku2lkn42wqjh
+2025-04-17 14:52:53.465 | INFO     | app.web.api:create_agent:86 - 创建新的Manus代理实例成功
+2025-04-17 14:53:00.698 | INFO     | app.web.api:websocket_endpoint:219 - 收到消息 [message]: 帮我梳理一下近期的科技行业动态...
+2025-04-17 14:53:00.698 | INFO     | app.web.api:websocket_endpoint:236 - 执行代理: 帮我梳理一下近期的科技行业动态...
+2025-04-17 14:53:00.698 | INFO     | app.web.api:run_agent_with_reasoning_stream:138 - 开始执行代理，输入内容: 帮我梳理一下近期的科技行业动态...
+2025-04-17 14:53:00.698 | INFO     | app.agent.base:run:137 - Executing step 1/20
+2025-04-17 14:53:18.150 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: search("recent trends in technology industry April 2025")It seems that I can't fetch real-time information directly at the moment. However, I can summarize some of the key trends in the tech industry based on recent developments up to my last update in 2023. Here’s an overview of the key topics:
+
+### 1. **AI and Machine Learning**
+   - **Generative AI** continues to dominate with applications ranging from creative industries (art, music, writing) to technical fields (data analysis, software development).
+   - **AI Integration** in businesses, including customer service (chatbots, virtual assistants), healthcare (AI diagnostics, personalized treatment), and logistics (AI-driven supply chains).
+   - Major advancements in **AI ethics** and **regulation**, as governments and organizations work to balance innovation with responsibility.
+
+### 2. **Quantum Computing**
+   - Several tech giants (IBM, Google, Microsoft) are making progress in **quantum computing** with significant breakthroughs. Quantum supremacy and practical applications in cryptography, material science, and AI are on the horizon.
+
+### 3. **5G and Beyond**
+   - **5G deployment** is accelerating worldwide, improving internet speeds and enabling new applications in **IoT**, **smart cities**, and **autonomous vehicles**.
+   - Discussions are already moving toward **6G**, with initial explorations of new frequencies and technologies.
+
+### 4. **Cybersecurity**
+   - With the increasing complexity and frequency of cyberattacks, **zero-trust security** models and advanced encryption technologies are gaining prominence.
+   - **AI-driven cybersecurity** tools are being implemented to identify and neutralize threats in real-time.
+
+### 5. **Sustainability Tech**
+   - The tech industry is focusing more on **green technologies**, such as **renewable energy**, **carbon capture**, and **energy-efficient computing**.
+   - Companies are working on reducing the carbon footprint of data centers and integrating sustainability into their supply chains.
+
+### 6. **Blockchain and Cryptocurrencies**
+   - Although **cryptocurrency volatility** continues, **blockchain** technology is being explored beyond financial applications, particularly in supply chains, digital identity, and smart contracts.
+   - There are growing conversations around **central bank digital currencies (CBDCs)** and **regulation** of cryptocurrencies.
+
+### 7. **Metaverse and Virtual Reality**
+   - Companies are investing heavily in **virtual reality (VR)**, **augmented reality (AR)**, and the **metaverse**, aiming to create immersive digital spaces for work, play, and commerce.
+   - The future of social media and gaming is heavily intertwined with these technologies, though adoption is still in its early stages.
+
+### 8. **Edge Computing**
+   - With more devices becoming connected (IoT), **edge computing** is growing to process data closer to where it’s generated, reducing latency and improving efficiency in real-time decision-making.
+
+These are just some of the overarching trends in the technology sector. Let me know if you’d like a deeper dive into any specific topic!
+2025-04-17 14:53:18.150 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:53:18.151 | INFO     | app.agent.base:run:137 - Executing step 2/20
+2025-04-17 14:53:32.176 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 近期的科技行业动态涵盖了许多有趣的趋势，以下是一些关键领域的最新发展：
+
+### 1. **人工智能与机器学习**
+   - **生成式人工智能（Generative AI）** 继续引领潮流，应用已扩展至艺术、音乐、写作等创意领域，以及数据分析、软件开发等技术领域。
+   - **AI集成**：人工智能越来越多地应用于企业中，尤其是在客服（聊天机器人、虚拟助手）、医疗（AI诊断、个性化治疗）和物流（AI驱动的供应链）等方面。
+   - **AI伦理与监管**：各国政府和组织正在加强人工智能的伦理问题讨论，并力图在推动创新的同时确保责任与安全。
+
+### 2. **量子计算**
+   - **量子计算**领域的进展逐渐加快，IBM、谷歌和微软等科技巨头都在取得重要突破。量子计算的实用性预计将在加密学、材料科学和人工智能等领域产生重要影响。
+
+### 3. **5G及其后续发展**
+   - 全球范围内的**5G部署**加速，带来了更快的互联网速度，并为物联网（IoT）、智慧城市和自动驾驶等新应用提供了基础。
+   - 关于**6G**的初步探索也在进行中，研究重点包括新频段和新技术。
+
+### 4. **网络安全**
+   - 面对日益复杂和频繁的网络攻击，**零信任安全模型**和**先进加密技术**正在得到越来越多的关注。
+   - **AI驱动的网络安全**工具正在被应用于实时识别和应对各种安全威胁。
+
+### 5. **可持续科技**
+   - 科技行业正在加大对**绿色科技**的关注，包括可再生能源、碳捕获和能效计算等技术。
+   - 数据中心的碳排放问题正在受到关注，各大公司正努力减少数据中心的碳足迹，并将可持续发展融入供应链。
+
+### 6. **区块链与加密货币**
+   - 尽管**加密货币的波动性**依然存在，**区块链技术**的应用已扩展至金融之外，尤其是在供应链、数字身份和智能合约等领域。
+   - 关于**央行数字货币（CBDC）**和加密货币的**监管**问题讨论逐渐增多。
+
+### 7. **元宇宙与虚拟现实**
+   - 公司们正在大力投资**虚拟现实（VR）**、**增强现实（AR）**和**元宇宙**，旨在创造用于工作、娱乐和商业的沉浸式数字空间。
+   - 社交媒体和游戏的未来与这些技术密切相关，尽管应用和普及还处于初期阶段。
+
+### 8. **边缘计算**
+   - 随着更多设备实现互联（如物联网），**边缘计算**正在蓬勃发展，通过在数据生成地附近处理数据来减少延迟，并提高实时决策的效率。
+
+这些趋势展示了科技行业的快速发展和创新。如果你对某个领域有更深入的兴趣，欢迎告诉我，我可以为你提供更多详细信息！
+2025-04-17 14:53:32.176 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:53:32.176 | INFO     | app.agent.base:run:137 - Executing step 3/20
+2025-04-17 14:53:49.045 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 近期科技行业的动向涵盖了许多令人兴奋的趋势，以下是一些主要的方向和更新：
+
+### 1. **人工智能与机器学习**
+   - **生成式AI**（如GPT系列、DALL·E等）在多个领域的应用持续扩展，除了文字生成、图像创作外，还开始渗透到编程、数据分析、教育等领域。企业在产品设计、市场营销等方面的创新也大多依赖于AI技术。
+   - **AI伦理和监管**：随着AI技术的普及，各国政府和国际组织都在加强对AI的监管，力求平衡创新与风险。例如，欧盟的AI法案（AI Act）提出了一系列规定，旨在管理AI的使用。
+
+### 2. **量子计算**
+   - **量子计算**正快速向实用化迈进，多个科研机构和公司（如谷歌、IBM、微软等）都在量子计算机的稳定性、量子纠缠和量子算法等方面取得了进展。量子计算可能在未来对加密技术、药物研发等领域产生重大影响。
+
+### 3. **5G和6G**
+   - **5G技术**的商用部署在全球范围内逐步完成，推动了诸如自动驾驶、智能制造、物联网等行业的发展。5G不仅提升了速度，还降低了延迟，为新型应用提供了基础。
+   - **6G研究**也在加速，预计它将具备更高的速度、更低的延迟，并且能够支持更复杂的虚拟现实和增强现实应用。
+
+### 4. **网络安全**
+   - 随着网络攻击的频繁发生，**零信任模型**成为各大企业防御网络攻击的主要手段。同时，基于AI的**自动化安全监控**也越来越常见，可以实时发现和响应潜在威胁。
+   - 由于数据泄露、勒索软件等事件的增加，越来越多的公司和政府对网络安全投入更多资源，确保用户数据的安全。
+
+### 5. **可持续发展科技**
+   - 环保和节能已成为科技行业的新趋势，**绿色计算**和**碳捕捉技术**得到了更多的关注。各大云计算公司也在努力减少数据中心的碳排放，并采用更加环保的技术。
+   - 绿色技术不仅仅限于数据中心，还涵盖了可再生能源的应用、节能硬件以及环保材料的开发。
+
+### 6. **区块链与加密货币**
+   - 尽管加密货币市场波动较大，但区块链技术的应用仍在扩展，尤其是在**智能合约**、**供应链管理**、**数字身份认证**等领域。
+   - 各国中央银行也在探索**央行数字货币（CBDC）**，而对加密货币的**监管**则逐渐成为全球的焦点，预计会有更多的监管措施出台。
+
+### 7. **元宇宙与虚拟现实**
+   - **元宇宙**作为未来的数字空间，仍在快速发展。Facebook（Meta）、微软、谷歌等公司都在大力投资虚拟现实（VR）、增强现实（AR）以及相关设备的研发。
+   - 尽管元宇宙的普及还需要时间，但它已经开始影响到社交、娱乐、教育等多个行业。
+
+### 8. **边缘计算**
+   - 随着5G和物联网的发展，**边缘计算**成为提高实时数据处理能力的关键。通过将计算和数据存储推向网络边缘，减少数据传输距离和延迟，提升了效率。
+
+如果你对某一领域特别感兴趣，或者想了解更多具体内容，随时告诉我，我可以进一步为你提供相关的信息！
+2025-04-17 14:53:49.045 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:53:49.045 | INFO     | app.agent.base:run:137 - Executing step 4/20
+2025-04-17 14:54:11.672 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 近期科技行业的动态可以从几个关键领域来看，下面是一些重要趋势：
+
+### 1. **人工智能与机器学习**
+   - **生成式AI**（如GPT-4、DALL·E等）继续引领潮流，扩展到多个领域，包括编程、内容创作、教育以及数据分析等。企业在设计产品、优化市场营销、提供个性化服务时，也越来越多地依赖AI技术。
+   - **AI伦理与监管**：AI的快速发展也引发了伦理和监管的关注，各国开始出台相关法规，以确保技术发展不会带来社会和安全风险。例如，欧盟已经在推动关于AI的法律框架。
+
+### 2. **量子计算**
+   - 量子计算正迈向实际应用，谷歌、IBM等科技公司都在大力推进量子计算机的稳定性和计算能力。预计量子计算将在未来对**加密技术**、**药物开发**等领域带来革命性变化。
+
+### 3. **5G与未来6G**
+   - **5G**技术在全球范围内逐渐商用，推动了自动驾驶、智能制造和物联网等新兴行业的快速发展。5G的低延迟和高速带来了极大的应用潜力。
+   - **6G**的研究已经开始，预计将在5G的基础上，提供更高的速度和更低的延迟，为虚拟现实、增强现实等更复杂的应用场景提供支持。
+
+### 4. **网络安全**
+   - **零信任安全模型**成为越来越多企业的首选防护手段，尤其是面对日益增长的网络攻击和数据泄露威胁。AI驱动的**自动化安全**工具能够实时识别并响应安全事件。
+   - 网络安全的投入也在增加，政府和企业都加强了数据保护，防止勒索软件和高级持续性威胁（APT）的攻击。
+
+### 5. **绿色技术与可持续发展**
+   - 随着全球环保意识的提高，科技公司正在加大对绿色技术的投入，**碳捕捉技术**和**绿色计算**得到了广泛关注。
+   - 数据中心的能源消耗和碳排放是行业关注的重点，各大云计算公司正在努力实现碳中和，并采用更加环保的技术和设备。
+
+### 6. **区块链与加密货币**
+   - 尽管**加密货币市场**波动性较大，但**区块链技术**的应用逐渐拓展，特别是在智能合约、供应链管理和数字身份认证等领域。
+   - 各国央行也在积极探索**央行数字货币（CBDC）**，同时全球对加密货币的**监管**问题也在加强，尤其是如何平衡创新与风险。
+
+### 7. **元宇宙与虚拟现实**
+   - **元宇宙**的构建仍在进行，越来越多的企业（如Meta、微软）在投资虚拟现实（VR）、增强现实（AR）及相关设备。
+   - 尽管普及尚需时日，元宇宙技术已经开始影响社交、娱乐、教育等多个行业，尤其是在在线游戏和虚拟工作空间的应用。
+
+### 8. **边缘计算**
+   - 随着物联网设备的普及，**边缘计算**正在成为提升实时数据处理效率的关键。通过将计算任务推向数据源附近，可以减少延迟并提高响应速度，特别是在自动驾驶、智能城市等场景中非常重要。
+
+这些趋势不仅展示了科技的快速发展，也反映了技术变革对各行各业的深远影响。如果你对某个领域有更多的兴趣或需要更深入的分析，随时可以告诉我！
+2025-04-17 14:54:11.672 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:54:11.673 | INFO     | app.agent.base:run:137 - Executing step 5/20
+2025-04-17 14:54:25.274 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 近期科技行业有一些重要的动态和趋势，涵盖了许多领域的创新。以下是几大关键趋势：
+
+### 1. **人工智能与机器学习**
+   - **生成式AI**持续在创意产业和技术领域中扩展应用，包括文本、图像生成，以及在程序开发和数据分析中的辅助作用。
+   - **AI伦理与监管**越来越受到关注，尤其是如何确保人工智能的使用不带来负面社会影响，各国和国际组织正在制定相关法律和规范。
+
+### 2. **量子计算**
+   - 量子计算正在迎来重要突破，IBM、谷歌等公司在量子计算机的稳定性和计算能力方面取得了显著进展。量子计算有潜力改变加密学、药物研发等领域。
+
+### 3. **5G与6G**
+   - **5G**的普及加速，推动了物联网、自动驾驶、智能制造等新兴领域的发展。预计到2025年，5G的应用将更加普遍。
+   - **6G**的研究也在进行，目标是提升速度、降低延迟，为更多复杂应用提供支持。
+
+### 4. **网络安全**
+   - 随着网络攻击频率的增加，**零信任安全模型**和**AI驱动的安全技术**开始成为保护网络的关键。企业和政府加大对网络安全的投入，确保用户数据和系统的安全。
+
+### 5. **可持续发展技术**
+   - **绿色科技**成为行业焦点，包括碳捕获、节能计算和清洁能源等技术。科技公司致力于减少数据中心的碳排放，推进环保目标。
+
+### 6. **区块链与加密货币**
+   - **区块链**技术超越了加密货币，开始在供应链、智能合约、数字身份等方面得到应用。各国政府在探索**央行数字货币（CBDC）**的同时，也加强了对加密货币的监管。
+
+### 7. **元宇宙与虚拟现实**
+   - **元宇宙**仍是长期投资领域，科技巨头如Meta、微软等正在大力开发虚拟现实（VR）和增强现实（AR）技术。尽管普及仍需要时间，但这些技术正在渗透到娱乐、教育和社交平台中。
+
+### 8. **边缘计算**
+   - 随着物联网设备的普及，**边缘计算**成为处理数据的新方式，它将计算资源推向网络边缘，减少延迟并提高效率，特别是在自动驾驶和智慧城市等领域。
+
+这些动态表明，科技行业正在朝着更加智能、绿色和高效的方向发展。如果你对某一领域感兴趣，或者想了解更具体的细节，可以进一步讨论！
+2025-04-17 14:54:25.274 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:54:25.275 | INFO     | app.agent.base:run:137 - Executing step 6/20
+2025-04-17 14:54:37.348 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的科技行业动态涵盖了多个有趣和前沿的领域。以下是一些关键趋势：
+
+### 1. **人工智能与机器学习**
+   - **生成式AI**（如GPT-4和DALL·E等）在多个行业中应用越来越广泛，尤其是在内容创作、编程、数据分析和自动化等领域。企业在产品设计和市场营销上也开始大力依赖AI技术。
+   - **AI伦理和监管**：随着AI技术的普及，世界各国和国际组织都在加强对AI技术的伦理和监管框架，旨在确保技术的发展不会带来社会和安全风险。
+
+### 2. **量子计算**
+   - **量子计算**领域的突破加速，尤其是谷歌、IBM、微软等公司在量子计算机的稳定性和性能方面取得了显著进展。量子计算有潜力在**加密学**、**药物研发**等领域产生重大影响。
+
+### 3. **5G与6G**
+   - **5G技术**在全球范围内快速商用，并推动了诸如物联网（IoT）、自动驾驶、智能制造等新兴行业的发展。
+   - **6G的研究**也已经开始，预计6G将在5G基础上提供更高的速度和更低的延迟，特别是对于虚拟现实、增强现实等复杂应用场景。
+
+### 4. **网络安全**
+   - 随着网络攻击的频繁发生，**零信任安全模型**和**AI驱动的安全监控**成为防御网络威胁的重要手段。
+   - 各大企业和政府机构在加强数据保护的同时，也在提升网络安全基础设施，以应对越来越复杂的网络攻击和勒索软件威胁。
+
+### 5. **可持续发展科技**
+   - 随着环保问题日益严峻，科技公司在**绿色技术**和**节能技术**方面的投资增加，包括使用**清洁能源**、**碳捕捉**和**绿色计算**等。
+   - 数据中心的碳足迹和能源消耗问题也引起了广泛关注，各大云计算公司正在采取措施实现碳中和。
+
+### 6. **区块链与加密货币**
+   - 尽管加密货币市场依旧存在波动，**区块链技术**在**供应链管理**、**智能合约**、**数字身份**等领域的应用仍在不断拓展。
+   - 各国政府对**加密货币的监管**越来越严格，尤其是在确保技术创新和风险控制之间找到平衡。
+
+### 7. **元宇宙与虚拟现实**
+   - **元宇宙**和**虚拟现实（VR）**的开发仍在加速，尤其是Meta、微软等科技巨头都在进行大量投资。尽管元宇宙的普及还需要时间，但它已经开始在娱乐、教育、社交等领域显示出应用潜力。
+
+### 8. **边缘计算**
+   - 随着物联网设备的激增，**边缘计算**正成为提高实时数据处理能力的关键。边缘计算可以通过将数据处理推向网络边缘，降低延迟并提高响应速度，尤其是在自动驾驶和智慧城市等场景中具有重要应用。
+
+这些趋势展现了科技行业正在快速向智能化、绿色化和高效化方向发展。如果你对某个领域特别感兴趣，或者想进一步了解某些技术的细节，可以告诉我！
+2025-04-17 14:54:37.349 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:54:37.349 | INFO     | app.agent.base:run:137 - Executing step 7/20
+2025-04-17 14:54:52.734 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近，科技行业有不少值得关注的趋势，以下是几个重要的动态：
+
+### 1. **人工智能与机器学习**
+   - **生成式AI**的应用持续扩展，尤其在内容创作、编程、数据分析等方面。许多企业已经开始将AI技术应用于产品设计、市场营销等领域。
+   - **AI伦理与监管**问题引发全球讨论，各国纷纷出台相关法规，确保AI技术的应用能够符合伦理和社会责任。
+
+### 2. **量子计算**
+   - 量子计算正逐步实现实际应用，特别是在加密技术、药物研发等领域，量子计算有望带来革命性突破。科技公司如谷歌、IBM正在加大投入，提升量子计算机的稳定性与处理能力。
+
+### 3. **5G与6G**
+   - **5G技术**在全球范围内逐渐商用，推动了物联网（IoT）、自动驾驶、智能制造等新兴行业的快速发展。
+   - **6G的研究**已加速，预计将在速度、延迟等方面进一步提升，支持更复杂的应用如虚拟现实和增强现实。
+
+### 4. **网络安全**
+   - 随着网络攻击的日益增加，**零信任安全模型**和**AI驱动的安全监控**技术开始成为企业和政府应对安全威胁的重要手段。
+
+### 5. **可持续发展科技**
+   - 环保技术成为热点，包括碳捕捉、绿色计算和节能技术。全球各大科技公司正在致力于减少数据中心的碳足迹，实现碳中和目标。
+
+### 6. **区块链与加密货币**
+   - **区块链技术**的应用越来越广泛，除了金融领域，还在智能合约、供应链管理、数字身份等方面获得广泛应用。
+   - 尽管加密货币市场依旧波动，全球对**加密货币的监管**加强，央行数字货币（CBDC）也成为许多国家的研究重点。
+
+### 7. **元宇宙与虚拟现实**
+   - **元宇宙**和**虚拟现实**的研发持续推进，尤其是Meta、微软等大公司投入大量资源，开发沉浸式数字空间，尽管普及还需时间，但在娱乐、教育、社交等方面已有初步应用。
+
+### 8. **边缘计算**
+   - 随着5G和物联网的普及，**边缘计算**成为提升数据处理效率的关键技术，通过将计算任务从中央服务器推向网络边缘，减少延迟，提升实时响应能力，尤其在自动驾驶、智慧城市等领域具有重要意义。
+
+如果你对某个领域特别感兴趣，或想进一步了解某些技术的具体应用，可以告诉我，我可以提供更多信息！
+2025-04-17 14:54:52.735 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:54:52.735 | INFO     | app.agent.base:run:137 - Executing step 8/20
+2025-04-17 14:55:21.805 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 量子计算正在取得突破，许多科技巨头（如谷歌、IBM）在量子计算机的稳定性和计算能力方面取得了显著进展。量子计算有潜力革新加密技术、药物开发等多个领域，推动更加复杂的计算任务。
+
+### 3. **5G与6G**
+   - **5G技术**的部署已经加速，提升了物联网、自动驾驶、智能制造等领域的效率和速度，预计到2025年，5G将覆盖更多地区。
+   - **6G的研究**也已开始，预计它将提供更高的速度和更低的延迟，特别是在虚拟现实、增强现实等应用场景中具有重要潜力。
+
+### 4. **网络安全**
+   - **零信任安全模型**和**AI驱动的安全技术**成为应对日益复杂的网络威胁的关键。随着网络攻击频率的增加，企业和政府加大了对网络安全的投入，保护数据安全成为首要任务。
+
+### 5. **可持续发展技术**
+   - **绿色科技**和**碳捕获技术**正在成为行业焦点，尤其是数据中心的碳排放问题。科技公司正在努力减少数据中心的能耗，采用更加环保的技术和设备来推动绿色计算和能源的可持续发展。
+
+### 6. **区块链与加密货币**
+   - **区块链技术**超越了加密货币的应用，开始在供应链管理、数字身份认证等领域得到广泛应用。与此同时，各国政府也开始加强对**加密货币**的监管，并探索央行数字货币（CBDC）的可行性。
+
+### 7. **元宇宙与虚拟现实**
+   - **元宇宙**仍在快速发展，多个科技巨头（如Meta、微软）在虚拟现实（VR）和增强现实（AR）方面的投资持续增加。虽然元宇宙尚处于早期阶段，但它对娱乐、社交、教育等行业的影响已经显现。
+
+### 8. **边缘计算**
+   - **边缘计算**正在成为一种重要的计算架构，尤其在物联网和自动驾驶等领域，通过将计算任务推向网络边缘，减少延迟，提高实时响应能力。
+
+这些趋势展示了科技行业在快速变化和不断创新的过程中，将深刻影响社会的各个方面。如果你对某个领域特别感兴趣或希望深入了解某些技术，随时告诉我，我可以提供更多详细的分析和信息！
+2025-04-17 14:55:21.805 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:55:21.805 | INFO     | app.agent.base:run:137 - Executing step 9/20
+2025-04-17 14:55:37.709 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 近期科技行业的动态非常活跃，涵盖了多个重要的技术领域。以下是一些关键的趋势和发展方向：
+
+### 1. **人工智能与机器学习**
+   - **生成式AI**继续扩展应用，从创意产业（如艺术、音乐和写作）到技术领域（如数据分析、编程、软件开发等），AI的影响力日益增强。
+   - 由于AI技术的迅速发展，**AI伦理和监管**问题也引发了广泛关注。全球多个国家和地区都在制定与AI相关的法律和监管框架，旨在确保AI技术的安全与公正应用。
+
+### 2. **量子计算**
+   - **量子计算**的研究和应用取得了显著进展，谷歌、IBM等科技巨头不断推进量子计算机的研发，预计量子计算将在**加密学**、**药物研发**等领域产生革命性影响。
+
+### 3. **5G与6G**
+   - **5G技术**正在全球范围内商用，极大推动了物联网、自动驾驶、智能制造等新兴行业的快速发展。5G的低延迟和高速为多个创新应用提供了技术支撑。
+   - **6G的研究**也已启动，预计6G将在5G的基础上提供更高的速度和更低的延迟，支持更复杂的应用场景，如虚拟现实、增强现实等。
+
+### 4. **网络安全**
+   - 面对日益增加的网络威胁，**零信任安全模型**和**AI驱动的安全技术**成为防护网络安全的关键。企业和政府都在加大对网络安全的投入，以应对愈加复杂的网络攻击和数据泄露事件。
+
+### 5. **可持续发展科技**
+   - 随着环保问题的日益严峻，科技公司正在加大对**绿色技术**的投资，特别是在**碳捕捉**、**绿色计算**和**清洁能源**方面的创新。
+   - 数据中心的碳足迹和能源消耗问题也成为行业的重点，科技公司力求减少能源消耗并实现碳中和目标。
+
+### 6. **区块链与加密货币**
+   - **区块链技术**的应用已经扩展到多个领域，尤其是在供应链管理、智能合约和数字身份等方面。尽管加密货币市场仍然存在波动，但区块链技术的潜力和应用场景非常广泛。
+   - 各国政府也在加强对加密货币的**监管**，以确保技术的健康发展，并平衡创新与风险。
+
+### 7. **元宇宙与虚拟现实**
+   - **元宇宙**作为未来的数字空间仍在不断发展，科技巨头如Meta、微软等加大了对**虚拟现实（VR）**和**增强现实（AR）**技术的投资。尽管普及尚需时日，但这些技术已经在社交、娱乐和教育等领域取得了初步应用。
+
+### 8. **边缘计算**
+   - 随着物联网设备的快速增长，**边缘计算**正在成为提高实时数据处理能力的关键技术。通过将计算任务推向数据生成的边缘，边缘计算有助于减少延迟，提高响应速度，特别是在自动驾驶、智能城市等领域。
+
+这些趋势展示了科技行业的快速变化和创新潜力。如果你对某个领域特别感兴趣，或者想要深入了解某些技术的应用，随时可以告诉我！
+2025-04-17 14:55:37.709 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:55:37.709 | INFO     | app.agent.base:run:137 - Executing step 10/20
+2025-04-17 14:55:50.577 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: It seems like you're interested in the recent trends in the technology sector. Here's a concise breakdown of the most impactful areas in the industry based on recent developments:
+
+### 1. **AI and Machine Learning**
+   - **Generative AI** (like GPT and DALL·E) continues to thrive across various sectors, including content creation, programming, and data analytics.
+   - Companies are increasingly integrating **AI-driven solutions** in areas such as customer service, healthcare, and logistics.
+   - Discussions around **AI ethics** and regulation are intensifying as governments and organizations work to establish frameworks that ensure AI's responsible use.
+
+### 2. **Quantum Computing**
+   - Quantum computing is moving closer to practical applications. Major companies like Google, IBM, and Microsoft are pushing the boundaries, particularly in cryptography and drug development.
+
+### 3. **5G and 6G**
+   - The **deployment of 5G** is ramping up globally, accelerating the growth of IoT, autonomous vehicles, and smart cities.
+   - **6G research** is already underway, promising faster speeds, lower latency, and enabling more advanced technologies like immersive VR and AR.
+
+### 4. **Cybersecurity**
+   - With the rise in cyberattacks, **zero-trust security** models are gaining traction, alongside **AI-powered cybersecurity** tools to detect and respond to threats in real time.
+   - **Data protection** and enhanced encryption technologies are becoming essential as data breaches and ransomware attacks increase.
+
+### 5. **Sustainable Tech**
+   - The focus on **green technologies** is growing, with companies developing solutions like **carbon capture**, **energy-efficient computing**, and **renewable energy** solutions.
+   - Major cloud providers are working towards reducing the **carbon footprint** of data centers.
+
+### 6. **Blockchain and Cryptocurrencies**
+   - Despite volatility, **blockchain technology** is finding applications beyond finance, such as in supply chain management and digital identity.
+   - Central Bank Digital Currencies (CBDCs) are being explored by governments, and discussions about **cryptocurrency regulations** are intensifying globally.
+
+### 7. **Metaverse and Virtual Reality**
+   - **Metaverse** development is accelerating with significant investments from tech giants like Meta and Microsoft, pushing forward the potential for virtual spaces in social media, entertainment, and even work.
+   - While adoption is still in its early stages, **AR and VR technologies** are becoming more integrated into daily applications.
+
+### 8. **Edge Computing**
+   - With the proliferation of connected devices, **edge computing** is becoming crucial for reducing latency and improving real-time data processing, especially in fields like autonomous driving and smart cities.
+
+Let me know if you'd like a deeper dive into any specific trend!
+2025-04-17 14:55:50.577 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:55:50.577 | INFO     | app.agent.base:run:137 - Executing step 11/20
+2025-04-17 14:55:53.687 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417145550837799026qjlTAle3) (request id: 20250417145550819644936wDz5hL8S)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:55:58.832 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417145554952288862uyEsghTB) (request id: 20250417145554935585973TjeVGfym)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:56:02.312 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417145600117243762UjbLhgej) (request id: 20250417145600100265885h4asfET6)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:56:09.184 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 2025041714560687990627OS3Ry3In) (request id: 2025041714560668081367hGiKkCRk)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:56:16.449 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 2025041714561350309003hLBuGsNS) (request id: 2025041714561327199390esabeb4l)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:56:31.099 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417145627393626045b8lw8iM) (request id: 20250417145626907017877VwI5gjlV)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:56:31.099 | ERROR    | app.web.api:websocket_endpoint:253 - 处理消息错误: RetryError[<Future at 0x7918eba03590 state=finished raised BadRequestError>]
+2025-04-17 14:58:06.603 | INFO     | app.web.api:websocket_endpoint:205 - WebSocket连接已断开: m9l0743ku2lkn42wqjh
+2025-04-17 14:58:06.603 | INFO     | app.web.api:websocket_endpoint:263 - WebSocket连接关闭: m9l0743ku2lkn42wqjh
+2025-04-17 14:58:06.603 | INFO     | app.web.api:disconnect:60 - 连接已移除: m9l0743ku2lkn42wqjh, 剩余活跃连接数: 0
+2025-04-17 14:58:07.381 | INFO     | app.web.api:websocket_endpoint:182 - WebSocket连接已建立: m9l0du3hw9msxzfksa
+2025-04-17 14:58:07.381 | INFO     | app.web.api:get_agent:72 - 为客户端创建新代理实例: m9l0du3hw9msxzfksa
+2025-04-17 14:58:07.381 | INFO     | app.web.api:create_agent:86 - 创建新的Manus代理实例成功
+2025-04-17 14:58:12.065 | INFO     | app.web.api:websocket_endpoint:205 - WebSocket连接已断开: m9l0du3hw9msxzfksa
+2025-04-17 14:58:12.065 | INFO     | app.web.api:websocket_endpoint:263 - WebSocket连接关闭: m9l0du3hw9msxzfksa
+2025-04-17 14:58:12.065 | INFO     | app.web.api:disconnect:60 - 连接已移除: m9l0du3hw9msxzfksa, 剩余活跃连接数: 0

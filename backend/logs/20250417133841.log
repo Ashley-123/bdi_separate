@@ -1,0 +1,3 @@
+2025-04-17 13:38:41.610 | INFO     | __main__:<module>:28 - 启动HKUST(GZ) BDI Web服务...
+2025-04-17 13:38:41.610 | INFO     | __main__:<module>:29 - 静态文件目录: /root/hkust_gz_bdi/backend/static
+2025-04-17 13:38:41.610 | INFO     | __main__:<module>:30 - 访问地址: http://47.106.95.15:8001

@@ -1,0 +1,4 @@
+2025-04-17 14:58:14.891 | INFO     | __main__:<module>:23 - 已从配置文件加载设置: /root/hkust_gz_bdi/backend/config/server_config.json
+2025-04-17 14:58:14.892 | INFO     | __main__:<module>:49 - 启动HKUST(GZ) BDI Web服务...
+2025-04-17 14:58:14.892 | INFO     | __main__:<module>:50 - 静态文件目录: /root/hkust_gz_bdi/backend/static
+2025-04-17 14:58:14.892 | INFO     | __main__:<module>:51 - 访问地址: http://10.100.0.231:8003

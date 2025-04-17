@@ -1,0 +1,244 @@
+2025-04-17 14:15:23.779 | INFO     | __main__:<module>:23 - 已从配置文件加载设置: /root/hkust_gz_bdi/backend/config/server_config.json
+2025-04-17 14:15:23.779 | INFO     | __main__:<module>:49 - 启动HKUST(GZ) BDI Web服务...
+2025-04-17 14:15:23.779 | INFO     | __main__:<module>:50 - 静态文件目录: /root/hkust_gz_bdi/backend/static
+2025-04-17 14:15:23.779 | INFO     | __main__:<module>:51 - 访问地址: http://10.100.0.231:8001
+2025-04-17 14:16:19.386 | INFO     | app.web.api:websocket_endpoint:182 - WebSocket连接已建立: m9kyw36quoulz80jto
+2025-04-17 14:16:19.387 | INFO     | app.web.api:get_agent:72 - 为客户端创建新代理实例: m9kyw36quoulz80jto
+2025-04-17 14:16:19.413 | INFO     | app.web.api:create_agent:86 - 创建新的Manus代理实例成功
+2025-04-17 14:16:25.694 | INFO     | app.web.api:websocket_endpoint:219 - 收到消息 [message]: 最近有哪些重要的国际新闻？...
+2025-04-17 14:16:25.694 | INFO     | app.web.api:websocket_endpoint:236 - 执行代理: 最近有哪些重要的国际新闻？...
+2025-04-17 14:16:25.694 | INFO     | app.web.api:run_agent_with_reasoning_stream:138 - 开始执行代理，输入内容: 最近有哪些重要的国际新闻？...
+2025-04-17 14:16:25.694 | INFO     | app.agent.base:run:137 - Executing step 1/20
+2025-04-17 14:16:34.687 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: GoogleSearch("recent important international news April 2025")recent important international news April 2025It looks like I’m unable to directly retrieve the latest news at the moment. However, you can easily get up-to-date information from trusted sources like:
+
+- **BBC News**: Covers a wide range of international topics.
+- **Reuters**: Known for quick and reliable global news.
+- **Al Jazeera**: Offers a different perspective on global events.
+- **The New York Times**: Provides in-depth coverage on many topics.
+
+Would you like me to help you with a specific topic or event? I can also try to assist with summarizing or analyzing related information!
+2025-04-17 14:16:34.687 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:16:34.688 | INFO     | app.agent.base:run:137 - Executing step 2/20
+2025-04-17 14:16:42.332 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的重要国际新闻涉及多个方面，包括全球政治、经济和环境问题等。虽然我无法直接拉取最新新闻内容，但你可以查看以下一些主流新闻源获取更新：
+
+- **BBC News**: 综合报道全球各类新闻。
+- **Reuters**: 提供全球财经和政治的快速、可靠新闻。
+- **Al Jazeera**: 从中东和全球其他地区提供独特视角。
+- **The New York Times**: 涵盖深度分析和国际大事件。
+
+你是否对某一领域的新闻感兴趣？比如政治、经济，或者气候变化等？我可以帮助你深入了解某个特定事件或主题。
+2025-04-17 14:16:42.332 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:16:42.333 | INFO     | app.agent.base:run:137 - Executing step 3/20
+2025-04-17 14:16:49.193 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涉及多个重要领域，包括政治、经济、气候变化等。如果你有特别关注的领域，我可以帮助你深入了解。例如，最近在全球范围内，气候变化问题变得愈发紧迫，各国也在加紧应对措施。除此之外，国际贸易、外交关系等方面也有不少新闻引发了关注。
+
+你有兴趣了解某个特定领域的新闻吗？或者有什么特定的事件或主题你想要进一步探索？
+2025-04-17 14:16:49.193 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:16:49.193 | INFO     | app.agent.base:run:137 - Executing step 4/20
+2025-04-17 14:16:55.568 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了多个重要领域，如全球政治、经济、气候变化等。如果你有兴趣了解某一特定事件或主题，我可以帮助你进一步探讨。以下是几个大致的领域，近期可能涉及重要新闻：
+
+1. **政治与外交**：如国际关系变化、重要国家领导人会晤、全球治理等。
+2. **经济发展**：例如全球经济形势、国际贸易协议、主要经济体的财政政策等。
+3. **气候变化与环境问题**：气候峰会、全球变暖、环境保护措施等。
+4. **全球冲突与安全**：涉及国际冲突、恐怖主义、地区安全等问题。
+
+你是否对某个领域特别感兴趣？或者有什么特定事件或新闻你想更深入了解？
+2025-04-17 14:16:55.568 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:16:55.568 | INFO     | app.agent.base:run:137 - Executing step 5/20
+2025-04-17 14:17:02.545 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了很多重要话题，包括全球政治、经济、气候变化等。尽管我无法直接提供最实时的新闻内容，但你可以参考以下一些主要的新闻源了解最新动态：
+
+1. **全球政治与外交**：近期国际间的领导人会晤、国际协定的签订以及地缘政治的变化，特别是涉及美中关系、俄罗斯与乌克兰的冲突等。
+   
+2. **经济**：全球经济复苏进程、国际贸易的变动以及各大经济体的财政政策，也引发了不少讨论。
+
+3. **气候变化与环境保护**：随着气候变化问题的加剧，国际社会在碳排放、环境保护和可持续发展等方面的行动成为了热点。
+
+4. **安全与冲突**：一些地区的冲突和安全问题，如中东地区、非洲的一些热点问题，仍然是关注焦点。
+
+如果你对某个领域特别感兴趣，或者想深入了解某个具体事件，请告诉我，我可以帮你提供更多的细节或者分析。
+2025-04-17 14:17:02.546 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:17:02.546 | INFO     | app.agent.base:run:137 - Executing step 6/20
+2025-04-17 14:17:10.496 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了多个重要领域，包括全球政治、经济、气候变化等。例如，国际间的领导人会晤、国际协议的签署以及气候变化的应对措施等。虽然我不能直接提供最新的实时内容，但以下是几个备受关注的领域：
+
+1. **全球政治与外交**：例如美中关系、俄罗斯与乌克兰的冲突等。近期的外交互动与政策变化非常重要。
+2. **全球经济**：随着全球经济的恢复，国际贸易形势、各国财政政策以及重大经济体的政策变动成为关注焦点。
+3. **气候变化**：全球气候变化问题日益严重，尤其是碳排放、能源转型等领域的国际行动。
+4. **全球安全与冲突**：中东、非洲地区的一些冲突，持续影响全球安全局势。
+
+如果你对某一领域特别感兴趣，或者想要了解某个具体事件的细节，随时告诉我！
+2025-04-17 14:17:10.496 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:17:10.496 | INFO     | app.agent.base:run:137 - Executing step 7/20
+2025-04-17 14:17:19.806 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涉及许多重要的事件和趋势，涵盖了政治、经济、气候变化等领域。以下是一些可能引起广泛关注的主题：
+
+1. **美中关系**：随着全球经济和安全形势的变化，美国与中国的外交关系持续紧张，涉及贸易、技术竞争以及地区安全等多个方面。
+
+2. **乌克兰危机**：俄罗斯与乌克兰的冲突仍然是全球焦点，国际社会对战争后果的反应以及对和平解决的尝试仍然在进行中。
+
+3. **气候变化和环境行动**：全球气候变化问题逐渐成为重中之重，特别是在碳排放、可再生能源发展和全球气候峰会后的国际合作方面。
+
+4. **国际经济**：全球经济的复苏进程，以及各国在货币政策、经济刺激和国际贸易中的立场，成为全球市场关注的焦点。
+
+5. **中东局势**：一些中东地区的国家依然面临政治动荡和安全威胁，特别是在叙利亚、也门和伊朗等地的局势，吸引了国际社会的广泛关注。
+
+如果你对某个特定事件或领域感兴趣，或者想进一步了解某一主题，我可以提供更多详细信息！
+2025-04-17 14:17:19.807 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:17:19.807 | INFO     | app.agent.base:run:137 - Executing step 8/20
+2025-04-17 14:17:28.572 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了多个重大议题，特别是全球政治、经济以及环境等方面。虽然我无法提供实时的最新新闻，但可以总结几个近期广泛关注的话题：
+
+1. **美中关系**：中美两国在贸易、科技、地缘政治等多个领域的关系持续紧张。近期的经济制裁和技术封锁，尤其是在半导体和人工智能领域，成为讨论的焦点。
+
+2. **乌克兰战争**：俄罗斯与乌克兰的冲突依然没有结束，全球社会对这一战争的反应不断变化，国际援助和外交努力仍在进行，和平进程仍然遥不可及。
+
+3. **气候变化**：全球气候变化问题变得越来越严峻。各国领导人和国际组织正在推进减少碳排放的举措，尤其是在巴黎协定框架下，各种气候峰会和行动计划成为热点话题。
+
+4. **全球经济复苏**：许多国家正在努力从大流行后的经济衰退中恢复过来，国际贸易和供应链问题也受到密切关注。各国的货币政策和经济刺激计划对全球经济形势有着深远的影响。
+
+5. **中东局势**：在叙利亚、也门和伊朗等地的冲突持续引发国际社会的关注。中东地区的安全局势仍然复杂多变。
+
+如果你对某一特定领域或事件感兴趣，或需要更详细的分析和信息，可以告诉我，我会进一步提供帮助！
+2025-04-17 14:17:28.572 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:17:28.572 | INFO     | app.agent.base:run:137 - Executing step 9/20
+2025-04-17 14:17:40.006 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涉及许多重要的议题，涵盖政治、经济、气候变化等多个方面。以下是一些比较引人关注的内容：
+
+1. **美中关系**：中美两国的贸易、科技竞争和地缘政治紧张局势依然是全球的焦点。尤其是在半导体、人工智能等高科技领域，双方的对抗愈发激烈。美国对中国的制裁以及对中国技术公司限制的加剧，仍然引发广泛讨论。
+
+2. **乌克兰危机**：俄罗斯与乌克兰的冲突依然没有平息，虽然有国际社会的外交努力，但战斗依旧持续，局势没有明显缓解。各国对乌克兰的军事援助和经济支持依然是热点议题。
+
+3. **气候变化与环境问题**：全球气候变化问题逐渐变得愈加紧迫，尤其是在碳排放、能源转型和国际合作等方面。各国领导人正在加紧行动，推动减排目标和绿色能源转型。近期的一些国际气候会议也成为了重要的讨论平台。
+
+4. **全球经济复苏**：新冠大流行后的全球经济复苏依旧面临挑战。各国政策、供应链恢复以及全球市场的波动成为焦点。国际货币基金组织和世界银行等机构对全球经济前景的预测，也引起了广泛关注。
+
+5. **中东局势**：中东地区的冲突问题仍然复杂，叙利亚、也门、伊朗等国家的局势对全球安全与政治格局产生持续影响。特别是伊朗与西方国家的外交关系、以及该地区的恐怖主义活动，依然是国际安全的重点议题。
+
+你是否对某个领域或事件特别感兴趣，或者想要进一步了解某个具体话题的背景和细节？我可以帮助你提供更多信息。
+2025-04-17 14:17:40.006 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:17:40.007 | INFO     | app.agent.base:run:137 - Executing step 10/20
+2025-04-17 14:17:48.727 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻关注了多个重要话题，涵盖了全球政治、经济、气候变化等领域。以下是一些引人注目的新闻趋势：
+
+1. **美中关系**：中美两国在科技和贸易方面的紧张关系依然是焦点，特别是在半导体、人工智能和高科技产业中的竞争日益激烈。美国的制裁和技术封锁措施，以及中国的反制措施，成为全球政治与经济的重要议题。
+
+2. **俄罗斯与乌克兰冲突**：尽管有外交努力，但俄罗斯与乌克兰的冲突依然没有缓解，国际社会对战局的关注持续。各国对乌克兰的军事援助和经济支持仍然是全球媒体报道的重点。
+
+3. **全球气候变化**：全球气候变化问题愈加紧迫，气候峰会和国际合作成为热门话题。许多国家在推动减排目标和能源转型方面采取了更为积极的措施。
+
+4. **全球经济复苏**：新冠疫情后的全球经济复苏仍面临挑战，尤其是供应链的恢复和全球市场的波动。国际货币基金组织和世界银行等机构的经济预测受到了广泛关注。
+
+5. **中东地区局势**：中东地区的安全和政治局势仍然不稳定，叙利亚、也门、伊朗等国家的冲突问题影响全球安全格局。伊朗与西方国家的外交关系，以及该地区的恐怖主义活动，仍然是国际社会关注的焦点。
+
+如果你对某个特定的事件或领域感兴趣，或者想了解更多相关信息，请告诉我！
+2025-04-17 14:17:48.727 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:17:48.728 | INFO     | app.agent.base:run:137 - Executing step 11/20
+2025-04-17 14:18:00.091 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了多个重要领域，以下是一些广泛关注的话题：
+
+1. **美中关系**：美中两国的关系持续紧张，特别是在科技、贸易和地缘政治方面。美国对中国的技术限制和贸易制裁依然在加剧，尤其是在半导体和人工智能领域。与此同时，中国也在加强自我发展和技术自主性，推动国际合作的同时，挑战西方的领导地位。
+
+2. **俄罗斯与乌克兰的冲突**：俄罗斯与乌克兰的战争仍在持续，虽然国际社会为推动和平进行努力，但局势依然严峻。乌克兰在军事和经济上得到西方国家的支持，而俄罗斯则加大了军事压力。全球的能源和粮食供应链也因此受到影响。
+
+3. **气候变化与环境问题**：随着全球气候变化问题的加剧，多个国家加强了环境保护措施，并承诺减少碳排放。近期的一些国际气候峰会和行动计划推动了绿色能源的投资和转型，尽管各国的执行力度参差不齐。
+
+4. **全球经济复苏**：全球经济的复苏面临不少挑战，尤其是供应链瓶颈、能源价格波动以及各国货币政策的变动。国际货币基金组织（IMF）和世界银行等机构都对全球经济前景进行了审视，特别是在新冠疫情后的复苏进程中。
+
+5. **中东局势**：中东地区仍然存在多重冲突，特别是叙利亚、也门以及伊朗等地的局势，持续影响着全球的安全与政治格局。伊朗与西方国家的关系紧张，特别是与美国的核协议谈判和制裁问题仍然是焦点。
+
+你对其中哪个领域或具体事件特别感兴趣吗？我可以提供更多详细的信息或进一步分析。
+2025-04-17 14:18:00.091 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:18:00.091 | INFO     | app.agent.base:run:137 - Executing step 12/20
+2025-04-17 14:18:11.485 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了许多重要的议题，主要集中在政治、经济、气候变化以及全球安全等领域。以下是一些重点话题：
+
+1. **美中关系**：中美两国在科技、贸易和地缘政治方面的紧张局势持续升温。美国加强了对中国的技术限制，特别是在半导体和人工智能领域，这引发了全球对未来国际技术竞争的关注。
+
+2. **乌克兰战争**：俄罗斯与乌克兰的冲突依旧没有平息，国际社会的援助持续增加，战局不稳定导致全球能源价格波动，并影响到全球粮食供应。
+
+3. **气候变化**：全球气候变化问题日益严峻，各国在减少碳排放、推动绿色能源转型方面采取了更多行动。国际气候峰会的讨论持续推动全球合作，尽管实施进展参差不齐。
+
+4. **全球经济复苏**：全球经济面临来自供应链问题、能源价格波动以及货币政策调整的挑战。国际货币基金组织（IMF）和世界银行等机构对未来经济走势进行了多次预警，强调新冠疫情后的经济复苏仍然脆弱。
+
+5. **中东局势**：中东地区的政治不稳定仍然是全球关注的重点，叙利亚、也门和伊朗等地的冲突和安全问题对全球安全产生持续影响。
+
+如果你对某个特定领域或事件有兴趣，我可以帮你深入分析或提供更多信息！
+2025-04-17 14:18:11.486 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:18:11.486 | INFO     | app.agent.base:run:137 - Executing step 13/20
+2025-04-17 14:18:20.697 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了多个领域，以下是一些关注度较高的主题：
+
+1. **美中关系**：中美两国在科技、贸易和地缘政治方面的紧张持续加剧，尤其是在半导体、人工智能等领域的竞争。美国加强了对中国企业的制裁，特别是在高科技领域。
+
+2. **俄罗斯与乌克兰的冲突**：俄罗斯与乌克兰之间的冲突依然没有结束，西方国家对乌克兰的军事援助和经济支持仍在继续。战争对全球能源和粮食供应链产生了深远影响。
+
+3. **全球气候变化**：气候变化问题愈发紧迫，全球各国在减少碳排放和推进绿色能源方面采取了更多行动。国际气候峰会和相关协议成为各国协作的核心。
+
+4. **全球经济复苏**：尽管世界经济正在从疫情中恢复，但面临供应链问题、能源价格波动和货币政策变动等挑战，国际货币基金组织和世界银行对未来经济形势进行了预警。
+
+5. **中东局势**：中东地区的政治动荡依然严重，特别是在叙利亚、也门和伊朗等国家的局势，影响着全球的安全与稳定。
+
+如果你对某个特定事件或领域有兴趣，或者想要进一步了解某个话题，随时告诉我，我可以为你提供更详细的信息！
+2025-04-17 14:18:20.697 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:18:20.697 | INFO     | app.agent.base:run:137 - Executing step 14/20
+2025-04-17 14:18:30.264 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涉及多个重要领域，以下是一些备受关注的主题：
+
+1. **美中关系**：中美两国在科技、贸易和地缘政治方面的紧张局势持续加剧，特别是在半导体、人工智能等领域的竞争。美国加强了对中国企业的制裁，特别是在高科技领域。
+
+2. **俄罗斯与乌克兰的冲突**：俄罗斯与乌克兰之间的冲突依然没有结束，西方国家对乌克兰的军事援助和经济支持仍在继续。战争对全球能源和粮食供应链产生了深远影响。
+
+3. **全球气候变化**：气候变化问题愈发紧迫，全球各国在减少碳排放和推进绿色能源方面采取了更多行动。国际气候峰会和相关协议成为各国协作的核心。
+
+4. **全球经济复苏**：尽管世界经济正在从疫情中恢复，但面临供应链问题、能源价格波动和货币政策变动等挑战，国际货币基金组织和世界银行对未来经济形势进行了预警。
+
+5. **中东局势**：中东地区的政治动荡依然严重，特别是在叙利亚、也门和伊朗等国家的局势，影响着全球的安全与稳定。
+
+如果你对某个特定事件或领域有兴趣，或者想要进一步了解某个话题，随时告诉我，我可以为你提供更详细的信息！
+2025-04-17 14:18:30.264 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:18:30.264 | INFO     | app.agent.base:run:137 - Executing step 15/20
+2025-04-17 14:18:38.258 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: Here are some of the key international news topics that have been in focus recently:
+
+1. **US-China Relations**: Tensions between the United States and China remain high, especially in areas like trade, technology, and geopolitical influence. Issues surrounding semiconductor and artificial intelligence technology, along with trade sanctions and restrictions, continue to dominate headlines. Both nations are vying for technological supremacy and political influence globally.
+
+2. **Russia-Ukraine Conflict**: The war between Russia and Ukraine is still ongoing, with no clear resolution in sight. International support for Ukraine, particularly military and economic aid from Western nations, remains crucial. Meanwhile, Russia continues to increase its military pressure. The conflict has also significantly impacted global energy and food supply chains.
+
+3. **Climate Change and Environmental Issues**: Climate change continues to be a critical issue, with international efforts to reduce carbon emissions and invest in green energy transitioning into prominent global discussions. Several international climate summits have been held, but the effectiveness of actions taken by individual countries varies. There is growing concern about the long-term environmental impacts if urgent actions aren't taken.
+
+4. **Global Economic Recovery**: The global economic recovery, especially post-pandemic, faces challenges like supply chain disruptions, fluctuating energy prices, and shifting monetary policies by various nations. International financial institutions, such as the IMF and World Bank, continue to assess the economic outlook amid these uncertainties.
+
+5. **Middle East Conflicts**: The security situation in the Middle East remains volatile, with ongoing conflicts in Syria, Yemen, and issues surrounding Iran's nuclear program. The geopolitical tensions in this region, particularly the relationship between Iran and Western nations, continue to have a significant impact on global security.
+
+Would you like to dive deeper into any of these topics or explore a specific event? I can provide further details or analysis as needed!
+2025-04-17 14:18:38.259 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:18:38.259 | INFO     | app.agent.base:run:137 - Executing step 16/20
+2025-04-17 14:18:50.229 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了多个重大议题，以下是一些广泛关注的话题：
+
+1. **美中关系**：美中两国在科技、贸易和地缘政治方面的紧张局势持续升温，特别是在半导体、人工智能和高科技产业中的竞争日益激烈。美国的制裁和技术封锁措施，以及中国的反制措施，成为全球政治与经济的重要议题。
+
+2. **俄罗斯与乌克兰的冲突**：俄罗斯与乌克兰的战争仍在持续，尽管国际社会进行着各种外交努力，但局势依然严峻。乌克兰在军事和经济上得到西方国家的支持，而俄罗斯则加大了军事压力，全球的能源和粮食供应链也因此受到影响。
+
+3. **气候变化与环境问题**：全球气候变化问题逐渐变得愈加紧迫，尤其是在碳排放、能源转型和国际合作等方面。各国领导人正在加紧行动，推动减排目标和绿色能源转型。近期的一些国际气候会议也成为了重要的讨论平台。
+
+4. **全球经济复苏**：新冠大流行后的全球经济复苏依旧面临挑战。各国政策、供应链恢复以及全球市场的波动成为焦点。国际货币基金组织和世界银行等机构对全球经济前景的预测，也引起了广泛关注。
+
+5. **中东局势**：中东地区的冲突问题仍然复杂，特别是叙利亚、也门、伊朗等地的局势，持续影响着全球安全与政治格局。伊朗与西方国家的关系、以及该地区的恐怖主义活动，仍然是国际安全的重点议题。
+
+如果你对某一特定的事件或领域感兴趣，或者想进一步了解某个具体话题的背景和细节，随时告诉我，我可以为你提供更多信息！
+2025-04-17 14:18:50.229 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:18:50.229 | INFO     | app.agent.base:run:137 - Executing step 17/20
+2025-04-17 14:18:59.338 | INFO     | app.agent.toolcall:think:53 - ✨ Manus's thoughts: 最近的国际新闻涵盖了多个重要领域，以下是一些广泛关注的主题：
+
+1. **美中关系**：中美两国在科技、贸易和地缘政治方面的紧张局势持续升温。美国加强了对中国的技术限制，特别是在半导体和人工智能领域，这引发了全球对未来国际技术竞争的关注。
+
+2. **俄罗斯与乌克兰的冲突**：俄罗斯与乌克兰的战争仍在持续，国际社会的援助持续增加，战局不稳定导致全球能源价格波动，并影响到全球粮食供应。
+
+3. **气候变化**：全球气候变化问题日益严峻，各国在减少碳排放、推动绿色能源转型方面采取了更多行动。国际气候峰会的讨论持续推动全球合作，尽管实施进展参差不齐。
+
+4. **全球经济复苏**：全球经济面临来自供应链问题、能源价格波动以及货币政策调整的挑战。国际货币基金组织（IMF）和世界银行等机构对未来经济走势进行了多次预警，强调新冠疫情后的经济复苏仍然脆弱。
+
+5. **中东局势**：中东地区的政治不稳定仍然是全球关注的重点，叙利亚、也门和伊朗等地的冲突和安全问题对全球安全产生持续影响。
+
+如果你对某个特定的事件或领域有兴趣，或者想了解更多相关信息，请告诉我，我可以帮你深入分析或提供更多信息！
+2025-04-17 14:18:59.338 | INFO     | app.agent.toolcall:think:54 - 🛠️ Manus selected 0 tools to use
+2025-04-17 14:18:59.338 | INFO     | app.agent.base:run:137 - Executing step 18/20
+2025-04-17 14:19:03.407 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417141859521263744B1huB5g4) (request id: 20250417141859501626629zhB3e602)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:19:08.558 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417141904582624316UH8cg3x0) (request id: 202504171419045660353489QJgNitd)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:19:13.325 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417141910515895282YC7OCqso) (request id: 20250417141910500824112lZGExhMB)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:19:20.093 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 202504171419167381283437FvsvxeX) (request id: 20250417141916722831756na7sDJtc)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:19:24.736 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417141921902165247TEWZTTEz) (request id: 20250417141921885798465Y0LnH3Jp)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:19:30.270 | ERROR    | app.llm:ask_tool:260 - API error: Error code: 400 - {'error': {'message': 'The message you submitted was too long, please reload the conversation and submit something shorter. (request id: 20250417141926915516193vlhR4YPH) (request id: 20250417141926899183991d3dvdPso)', 'type': 'invalid_request_error', 'param': '', 'code': 'message_length_exceeds_limit'}}
+2025-04-17 14:19:30.271 | ERROR    | app.web.api:websocket_endpoint:253 - 处理消息错误: RetryError[<Future at 0x767dc4ddbc50 state=finished raised BadRequestError>]
+2025-04-17 14:36:42.499 | INFO     | app.web.api:websocket_endpoint:205 - WebSocket连接已断开: m9kyw36quoulz80jto
+2025-04-17 14:36:42.499 | INFO     | app.web.api:websocket_endpoint:263 - WebSocket连接关闭: m9kyw36quoulz80jto
+2025-04-17 14:36:42.499 | INFO     | app.web.api:disconnect:60 - 连接已移除: m9kyw36quoulz80jto, 剩余活跃连接数: 0
