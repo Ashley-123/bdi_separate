@@ -178,6 +178,7 @@ async def run_agent_with_reasoning_stream(agent: Manus, content: str, websocket:
 
 @app.websocket("/ws/chat/{client_id}")
 @app.websocket("/fintech/ws/chat/{client_id}")
+@app.websocket("/fintech/api/ws/chat/{client_id}")
 async def websocket_endpoint(websocket: WebSocket, client_id: str):
     await websocket.accept()
     # 记录连接详情

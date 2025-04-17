@@ -3,7 +3,7 @@
         "host": "10.100.0.231",
         "port": 8001,
         "api_url": "/fintech/api",
-        "ws_url": "ws://10.100.0.231:8001"
+        "ws_url": "/fintech/ws"
     },
     "frontend": {
         "host": "10.100.0.231",

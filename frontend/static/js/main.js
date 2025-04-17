@@ -793,52 +793,15 @@ function setupEventListeners() {
 function connectWebSocket() {
     let wsUrl;
     
-    // 使用配置中的WebSocket URL
-    if (serverConfig.backend.ws_url) {
-        // 添加详细的调试信息
-        console.log(`原始ws_url配置：${serverConfig.backend.ws_url}`);
-        
-        // 定义修正后的URL
-        let baseUrl = serverConfig.backend.ws_url;
-        
-        // 检查当前页面协议
-        const isHttps = window.location.protocol === 'https:';
-        
-        // 处理WebSocket URL
-        if (!baseUrl.startsWith('ws://') && !baseUrl.startsWith('wss://')) {
-            // 无协议的URL，根据当前环境添加适当的协议
-            if (isHttps) {
-                baseUrl = `wss://${baseUrl.replace(/^https?:\/\//, '')}`;
-            } else {
-                baseUrl = `ws://${baseUrl.replace(/^https?:\/\//, '')}`;
-            }
-            console.log(`添加WebSocket协议: ${baseUrl}`);
-        } else if (isHttps && baseUrl.startsWith('ws://')) {
-            // 如果页面是HTTPS但WebSocket使用ws://，将其更改为wss://
-            baseUrl = baseUrl.replace('ws://', 'wss://');
-            console.log(`HTTPS页面，将WebSocket协议更改为WSS: ${baseUrl}`);
-        }
-        
-        // 拼接完整URL
-        wsUrl = `${baseUrl}/ws/chat/${clientId}`;
-        
-        // 添加调试信息，便于排查问题
-        console.log(`最终WebSocket URL: ${wsUrl}`);
-        console.log(`当前页面协议: ${window.location.protocol}`);
-        console.log(`WebSocket readyState: ${socket ? socket.readyState : 'socket未创建'}`);
-    } else if(window.location.hostname === '10.100.0.231' || window.location.hostname.includes('localhost') || window.location.hostname.includes('127.0.0.1')) {
-        // 使用内网IP连接
+    // 根据环境直接设置WebSocket URL
+    if(window.location.hostname === '10.100.0.231' || window.location.hostname.includes('localhost') || window.location.hostname.includes('127.0.0.1')) {
+        // 内网环境 - 直接连接后端
         wsUrl = `ws://10.100.0.231:8001/ws/chat/${clientId}`;
-        console.log(`使用内网IP连接: ${wsUrl}`);
-    } else if(window.location.hostname.includes('mdi.hkust-gz.edu.cn')) {
-        // 使用外网地址连接
-        wsUrl = `wss://mdi.hkust-gz.edu.cn/fintech/ws/chat/${clientId}`;
-        console.log(`使用外网地址连接: ${wsUrl}`);
+        console.log(`使用内网连接: ${wsUrl}`);
     } else {
-        // 回退到相对地址
-        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-        wsUrl = `${protocol}//${window.location.host}/fintech/ws/chat/${clientId}`;
-        console.log(`使用相对地址连接: ${wsUrl}`);
+        // 外网环境 - 通过API路径连接
+        wsUrl = `wss://mdi.hkust-gz.edu.cn/fintech/api/ws/chat/${clientId}`;
+        console.log(`使用外网连接: ${wsUrl}`);
     }
     
     // 如果已经强制断开，不再尝试重连
