@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKUST(GZ) BDI</title>
+    <link rel="stylesheet" href="/fintech/static/css/styles.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="/fintech/static/css/bootstrap-icons.min.css">
+    <link rel="icon" href="/fintech/static/favicon/favicon.ico" type="image/x-icon">
+    <!-- 引入Pyodide -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>HKUST(GZ) BDI</h1>
+            </div>
+            
+            <!-- 项目列表区域 -->
+            <div class="projects-section">
+                <div class="section-title">
+                    <span>项目列表</span>
+                    <button id="add-project-btn" class="add-btn">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+                <div class="projects-list" id="projects-list">
+                    <!-- 默认项目 -->
+                    <div class="project-item" data-project-id="hot-news">
+                        <i class="bi bi-fire"></i>
+                        <span>热点追踪</span>
+                        <button class="project-config-btn" data-project-id="hot-news">
+                            <i class="bi bi-gear"></i>
+                        </button>
+                    </div>
+                    <div class="project-item" data-project-id="market-analysis">
+                        <i class="bi bi-graph-up"></i>
+                        <span>大盘分析</span>
+                        <button class="project-config-btn" data-project-id="market-analysis">
+                            <i class="bi bi-gear"></i>
+                        </button>
+                    </div>
+                    <div class="project-item" data-project-id="k-quant">
+                        <i class="bi bi-cpu"></i>
+                        <span>探索K-Quant</span>
+                        <button class="project-config-btn" data-project-id="k-quant">
+                            <i class="bi bi-gear"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 对话区域 -->
+            <div class="chats-section">
+                <div class="section-title">
+                    <span>我的对话</span>
+                </div>
+                <div class="chats-list" id="chats-list">
+                    <!-- 对话项目列表将通过JS动态添加 -->
+                    <div class="chat-project-group">
+                        <div class="chat-project-item" data-project-id="hot-news">
+                            <div class="chat-project-info">
+                                <i class="bi bi-fire"></i>
+                                <span>热点追踪</span>
+                            </div>
+                            <button class="start-chat-btn" data-project-id="hot-news">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div class="chat-history-list" data-project-id="hot-news">
+                            <!-- 该项目的历史对话将通过JS动态添加 -->
+                        </div>
+                    </div>
+                    
+                    <div class="chat-project-group">
+                        <div class="chat-project-item" data-project-id="market-analysis">
+                            <div class="chat-project-info">
+                                <i class="bi bi-graph-up"></i>
+                                <span>大盘分析</span>
+                            </div>
+                            <button class="start-chat-btn" data-project-id="market-analysis">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div class="chat-history-list" data-project-id="market-analysis">
+                            <!-- 该项目的历史对话将通过JS动态添加 -->
+                        </div>
+                    </div>
+                    
+                    <div class="chat-project-group">
+                        <div class="chat-project-item" data-project-id="k-quant">
+                            <div class="chat-project-info">
+                                <i class="bi bi-cpu"></i>
+                                <span>探索K-Quant</span>
+                            </div>
+                            <button class="start-chat-btn" data-project-id="k-quant">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div class="chat-history-list" data-project-id="k-quant">
+                            <!-- 该项目的历史对话将通过JS动态添加 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="settings-menu">
+                    <button id="settings-btn" class="settings-btn">
+                        <i class="bi bi-gear"></i>
+                        <span>设置</span>
+                    </button>
+                    <div class="settings-dropdown" id="settings-dropdown">
+                        <div class="settings-item" id="clear-history">
+                            <i class="bi bi-trash"></i>
+                            <span>清除历史记录</span>
+                        </div>
+                        <div class="settings-item" id="toggle-reasoning">
+                            <i class="bi bi-lightbulb"></i>
+                            <span>显示推理过程</span>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="reasoning-toggle">
+                                <label for="reasoning-toggle"></label>
+                            </div>
+                        </div>
+                        <div class="settings-item" id="about-us">
+                            <i class="bi bi-info-circle"></i>
+                            <span>关于我们</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <!-- WebSocket状态信息 -->
+            <div class="connection-status" id="connection-status">
+                <i class="bi bi-info-circle"></i>
+                <span>WebSocket连接已建立</span>
+            </div>
+            
+            <div class="chat-interface">
+                <div class="main-chat-area">
+                    <div class="chat-container" id="chat-container">
+                        <div class="welcome-screen" id="welcome-screen">
+                            <h1 id="project-title">热点追踪</h1>
+                            <p id="project-welcome">追踪实时热点新闻和事件，了解最新动态</p>
+                            <div class="examples">
+                                <h3>您可以尝试：</h3>
+                                <div class="example-grid" id="example-grid">
+                                    <!-- 示例问题将通过JS动态添加 -->
+                                    <div class="example-card" onclick="setPrompt('最近有哪些重要的国际新闻？')">
+                                        <i class="bi bi-globe"></i>
+                                        <p>最近有哪些重要的国际新闻？</p>
+                                    </div>
+                                    <div class="example-card" onclick="setPrompt('帮我梳理一下近期的科技行业动态')">
+                                        <i class="bi bi-cpu"></i>
+                                        <p>帮我梳理一下近期的科技行业动态</p>
+                                    </div>
+                                    <div class="example-card" onclick="setPrompt('最近有哪些热门社会事件？')">
+                                        <i class="bi bi-people"></i>
+                                        <p>最近有哪些热门社会事件？</p>
+                                    </div>
+                                    <div class="example-card" onclick="setPrompt('帮我总结一下近期的经济政策变化')">
+                                        <i class="bi bi-cash-coin"></i>
+                                        <p>帮我总结一下近期的经济政策变化</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-messages" id="chat-messages">
+                            <!-- 聊天消息将通过JS动态添加 -->
+                        </div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <div class="input-wrapper">
+                            <textarea id="user-input" placeholder="输入消息..." rows="1"></textarea>
+                            <button id="send-btn" class="send-btn">
+                                <i class="bi bi-send"></i>
+                            </button>
+                        </div>
+                        <div class="disclaimer">
+                            请负责任地使用，不要发送敏感信息。
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 推理过程侧边栏 -->
+                <div class="reasoning-sidebar" id="reasoning-sidebar">
+                    <div class="reasoning-sidebar-header">
+                        <i class="bi bi-lightbulb"></i> 推理过程
+                    </div>
+                    <div class="reasoning-content" id="reasoning-content">
+                        <!-- 推理过程将通过JS动态添加 -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 项目配置模态框 -->
+            <div class="modal" id="project-config-modal">
+                <div class="modal-content project-config-modal">
+                    <div class="modal-header">
+                        <h2>项目配置</h2>
+                        <button class="close-modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="project-config-form">
+                            <input type="hidden" id="project-id" name="project-id">
+                            
+                            <div class="form-group">
+                                <label for="project-name">项目名称</label>
+                                <input type="text" id="project-name" name="project-name" placeholder="输入项目名称" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-icon">项目图标</label>
+                                <div class="icon-selection">
+                                    <div class="selected-icon" id="selected-icon">
+                                        <i class="bi bi-fire"></i>
+                                    </div>
+                                    <div class="icon-grid" id="icon-grid">
+                                        <div class="icon-item" data-icon="bi-fire"><i class="bi bi-fire"></i></div>
+                                        <div class="icon-item" data-icon="bi-graph-up"><i class="bi bi-graph-up"></i></div>
+                                        <div class="icon-item" data-icon="bi-cpu"><i class="bi bi-cpu"></i></div>
+                                        <div class="icon-item" data-icon="bi-globe"><i class="bi bi-globe"></i></div>
+                                        <div class="icon-item" data-icon="bi-book"><i class="bi bi-book"></i></div>
+                                        <div class="icon-item" data-icon="bi-cash-coin"><i class="bi bi-cash-coin"></i></div>
+                                        <div class="icon-item" data-icon="bi-chat"><i class="bi bi-chat"></i></div>
+                                        <div class="icon-item" data-icon="bi-robot"><i class="bi bi-robot"></i></div>
+                                        <div class="icon-item" data-icon="bi-lightbulb"><i class="bi bi-lightbulb"></i></div>
+                                        <div class="icon-item" data-icon="bi-search"><i class="bi bi-search"></i></div>
+                                        <div class="icon-item" data-icon="bi-database"><i class="bi bi-database"></i></div>
+                                        <div class="icon-item" data-icon="bi-gear"><i class="bi bi-gear"></i></div>
+                                        <div class="icon-item" data-icon="bi-bar-chart"><i class="bi bi-bar-chart"></i></div>
+                                        <div class="icon-item" data-icon="bi-pie-chart"><i class="bi bi-pie-chart"></i></div>
+                                        <div class="icon-item" data-icon="bi-bank"><i class="bi bi-bank"></i></div>
+                                        <div class="icon-item" data-icon="bi-currency-exchange"><i class="bi bi-currency-exchange"></i></div>
+                                        <div class="icon-item" data-icon="bi-trophy"><i class="bi bi-trophy"></i></div>
+                                        <div class="icon-item" data-icon="bi-newspaper"><i class="bi bi-newspaper"></i></div>
+                                        <div class="icon-item" data-icon="bi-people"><i class="bi bi-people"></i></div>
+                                        <div class="icon-item" data-icon="bi-person-vcard"><i class="bi bi-person-vcard"></i></div>
+                                        <div class="icon-item" data-icon="bi-briefcase"><i class="bi bi-briefcase"></i></div>
+                                        <div class="icon-item" data-icon="bi-building"><i class="bi bi-building"></i></div>
+                                        <div class="icon-item" data-icon="bi-mortarboard"><i class="bi bi-mortarboard"></i></div>
+                                        <div class="icon-item" data-icon="bi-translate"><i class="bi bi-translate"></i></div>
+                                        <div class="icon-item" data-icon="bi-server"><i class="bi bi-server"></i></div>
+                                        <div class="icon-item" data-icon="bi-code-slash"><i class="bi bi-code-slash"></i></div>
+                                        <div class="icon-item" data-icon="bi-cloud"><i class="bi bi-cloud"></i></div>
+                                        <div class="icon-item" data-icon="bi-envelope"><i class="bi bi-envelope"></i></div>
+                                        <div class="icon-item" data-icon="bi-chat-square-text"><i class="bi bi-chat-square-text"></i></div>
+                                        <div class="icon-item" data-icon="bi-pencil-square"><i class="bi bi-pencil-square"></i></div>
+                                        <div class="icon-item" data-icon="bi-stars"><i class="bi bi-stars"></i></div>
+                                        <div class="icon-item" data-icon="bi-emoji-smile"><i class="bi bi-emoji-smile"></i></div>
+                                        <div class="icon-item" data-icon="bi-calendar-event"><i class="bi bi-calendar-event"></i></div>
+                                        <div class="icon-item" data-icon="bi-clipboard-data"><i class="bi bi-clipboard-data"></i></div>
+                                        <div class="icon-item" data-icon="bi-clock-history"><i class="bi bi-clock-history"></i></div>
+                                        <div class="icon-item" data-icon="bi-compass"><i class="bi bi-compass"></i></div>
+                                        <div class="icon-item" data-icon="bi-magic"><i class="bi bi-magic"></i></div>
+                                        <div class="icon-item" data-icon="bi-heart"><i class="bi bi-heart"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-welcome">欢迎语</label>
+                                <textarea id="project-welcome-text" name="project-welcome" placeholder="输入项目欢迎语" rows="2" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>示例问题</label>
+                                <div class="example-questions" id="example-questions">
+                                    <div class="example-question-item">
+                                        <input type="text" name="example-question" placeholder="输入示例问题" required>
+                                        <button type="button" class="remove-example-btn"><i class="bi bi-x"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="add-example-btn" class="add-example-btn">
+                                    <i class="bi bi-plus"></i> 添加示例问题
+                                </button>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="api-endpoint">对话API</label>
+                                <input type="text" id="api-endpoint" name="api-endpoint" placeholder="输入API端点URL">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="knowledge-upload">知识库上传</label>
+                                <div class="file-upload-container">
+                                    <input type="file" id="knowledge-upload" name="knowledge-upload" multiple>
+                                    <button type="button" id="upload-btn" class="upload-btn">选择文件</button>
+                                    <span id="upload-file-list">未选择文件</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="save-btn">保存配置</button>
+                                <button type="button" id="delete-project-btn" class="delete-btn">删除项目</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 关于我们模态框 -->
+            <div class="modal" id="about-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>关于我们</h2>
+                        <button class="close-modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>HKUST(GZ) BDI Web界面</h3>
+                        <p>开发者：Ashley</p>
+                        <p>基于OpenManus开源框架，添加了Web界面支持及特色功能，让您可以在浏览器中使用强大的AI代理能力。</p>
+                        <div class="developer-info">
+                            <h4>项目信息</h4>
+                            <p>版本：1.0.0</p>
+                            <p>GitHub：<a href="https://github.com/Ashley-123/openmanus-" target="_blank">https://github.com/Ashley-123/openmanus-</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/fintech/static/js/code-editor.js"></script>
+    <script src="/fintech/static/js/main.js"></script>
+</body>
+</html> 

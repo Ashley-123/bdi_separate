@@ -1,0 +1,5 @@
+2025-04-27 15:27:40.789 | INFO     | __main__:<module>:27 - 已从配置文件加载设置: C:\Users\ashle\Downloads\dev\backend\config\server_config.json
+2025-04-27 15:27:40.789 | INFO     | __main__:<module>:78 - 启动HKUST(GZ) BDI Web服务...
+2025-04-27 15:27:40.789 | INFO     | __main__:<module>:79 - 静态文件目录: C:\Users\ashle\Downloads\dev\backend\static
+2025-04-27 15:27:40.789 | INFO     | __main__:<module>:80 - 内网访问地址: http://10.100.0.231:8001 或 http://10.21.3.2:8001
+2025-04-27 15:27:40.789 | INFO     | __main__:<module>:81 - 外网访问地址: https://mdi.hkust-gz.edu.cn/fintech/api

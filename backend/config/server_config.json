@@ -1,0 +1,13 @@
+{
+    "backend": {
+        "host": "10.100.0.231",
+        "port": 8001,
+        "api_url": "/fintech/api"
+    },
+    "frontend": {
+        "host": "10.100.0.231",
+        "port": 8003,
+        "url": "http://10.100.0.231:8003/fintech",
+        "base_path": "/fintech"
+    }
+}
